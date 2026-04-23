@@ -1,0 +1,18 @@
+[2026-04-23T00:09:37Z] === ENRICH ITERATION 2 START | repo=rust-lang/log sha=98abd8fe ===
+[2026-04-23T00:09:37Z] [iter=2] PHASE START: enrich repo=rust-lang/log sha=98abd8fe runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/98abd8fe-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/98abd8feeaba4a8c7bdbf429bf2fb9eaab3faf68.nq.gz
+[2026-04-23T00:09:37Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-23T00:09:38Z] [iter=2] AST store loaded triples=70670 load_secs=1 mem_mb=177 MB
+[2026-04-23T00:09:38Z] [iter=2] Step 2: Finding LSP targets mem_mb=177 MB
+[2026-04-23T00:09:38Z] [iter=2] LSP targets found call_sites=479 imports=24 extends=0 implements=4 secs=0
+[2026-04-23T00:09:38Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=177 MB
+[2026-04-23T00:09:38Z] [iter=2] Position index built positions=5093 nodes_with_types=5866 secs=0 mem_mb=177 MB
+[2026-04-23T00:09:38Z] [iter=2] Step 3: Starting LSP resolution mem_mb=177 MB already_completed_types=[] already_completed_files=0
+[2026-04-23T00:09:38Z] [iter=2] Resolving target type target_type=call_site count=479
+[2026-04-23T00:09:51Z] [iter=2] Target type resolved target_type=call_site resolved=99 errors=97 secs=12 mem_mb=177 MB
+[2026-04-23T00:09:51Z] [iter=2] Resolving target type target_type=import_statement count=24
+[2026-04-23T00:09:57Z] [iter=2] Target type resolved target_type=import_statement resolved=12 errors=0 secs=7 mem_mb=177 MB
+[2026-04-23T00:09:57Z] [iter=2] Resolving target type target_type=implements_clause count=4
+[2026-04-23T00:10:02Z] [iter=2] Target type resolved target_type=implements_clause resolved=2 errors=0 secs=5 mem_mb=177 MB
+[2026-04-23T00:10:09Z] [iter=2] Step 5: Writing final enrichment file triples=2966
+[2026-04-23T00:10:09Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/98abd8feeaba4a8c7bdbf429bf2fb9eaab3faf68.nq.gz size_kb=43
+[2026-04-23T00:10:09Z] [iter=2] PHASE END: enrich elapsed_s=31 elapsed_min=0.5 total_triples=2966
